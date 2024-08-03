@@ -1,17 +1,8 @@
-# Imaginary-Purchase-Order-System-SQL
-IMAGINARY PURCHASE ORDER SYSTEM TO CREATE RELATIONSHIP BETWEEN ITEMS, CUSTOMERS, ORDERS, LINE ITEMS.
 
-THE DELIVERABLES OF THE PROJECT IS EXECUTION OF MULTIPLE SQL QUERIES RELATED TO
 
-THIS PURCHASE ORDER SYSTEM.
+# 🛒 Imaginary Purchase Order System
 
-E,G: DISPLAYING ORDER DATE, APPROXIMATE SHIPPING DATE, AFTER 3 DAYS FROM THE DAY WHEN ORDER HAS BEEN PLACED.
-
-*THE ENTIRE ER DIAGRAM INCLUDING CONSTRAINTS, KEYS, RELATIONSHIPS, META DATA HAS BEEN DESCRIBED IN THE PRJECT EXPLANATION PDF(PROJECT REPORT).
-
-# Imaginary Purchase Order System
-
-This repository contains an SQL-based project for an imaginary Purchase Order System. The project creates relationships between items, customers, orders, and line items. The deliverables include the execution of multiple SQL queries related to the purchase order system.
+This repository features an SQL-based project for managing an imaginary Purchase Order System. It establishes relationships between items, customers, orders, and line items. The project delivers various SQL queries to efficiently handle data related to the purchase order system.
 
 ## Table of Contents
 
@@ -26,54 +17,69 @@ This repository contains an SQL-based project for an imaginary Purchase Order Sy
 
 ## Features
 
-- Relationships between items, customers, orders, and line items
-- Execution of multiple SQL queries
-- Display order date and approximate shipping date (3 days after order date)
-- Comprehensive project report including ER diagram, constraints, keys, relationships, and metadata
+- 🔗 Establish relationships between items, customers, orders, and line items
+- 📝 Execute multiple SQL queries for data manipulation
+- 📅 Display order date and calculate approximate shipping date (3 days after order date)
+- 📈 Comprehensive project report including ER diagram, constraints, keys, relationships, and metadata
 
 ## Technologies Used
 
 - SQL
 - Relational Database Management System (RDBMS)
 
+## Project Structure
+
+```
+ImaginaryPurchaseOrderSystem/
+├── sql/
+│   ├── create_tables.sql
+│   ├── insert_data.sql
+│   └── queries.sql
+├── resources/
+│   └── Project_Report.pdf
+├── screenshots/
+│   └── query_execution.png
+└── README.md
+```
 
 ## Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
 
-    bash
-    git clone https://github.com/yourusername/ImaginaryPurchaseOrderSystem.git
+    ```bash
+    git clone https://github.com/Soumita-2018/Imaginary-Purchase-Order-System-SQL.git
     cd ImaginaryPurchaseOrderSystem
-    
+    ```
 
-2. Ensure that an RDBMS (e.g., MySQL, PostgreSQL) is installed and running on your machine.
+2. **Ensure that an RDBMS (e.g., MySQL, PostgreSQL) is installed and running on your machine.**
 
-3. Create the necessary database and run the SQL scripts in the sql directory in the following order:
-    - create_tables.sql
-    - insert_data.sql
+3. **Create the necessary database and run the SQL scripts in the `sql` directory in the following order:**
+
+    - `create_tables.sql`
+    - `insert_data.sql`
 
 ## Usage
 
 1. Open your preferred SQL client and connect to your database.
 
-2. Execute the queries in the queries.sql file to interact with the purchase order system.
+2. Execute the queries in the `queries.sql` file to interact with the purchase order system.
 
 ## SQL Queries
 
-Some example SQL queries included in the project:
+Here are some example SQL queries included in the project:
 
-- Display order date and approximate shipping date (3 days after order date):
+- **Display order date and approximate shipping date (3 days after order date):**
 
-    sql
+    ```sql
     SELECT order_id, order_date, order_date + INTERVAL 3 DAY AS approximate_shipping_date
     FROM orders;
-    
+    ```
 
 - Other queries for retrieving and manipulating data related to items, customers, orders, and line items.
 
 ## ER Diagram
 
-The ER Diagram including constraints, keys, relationships, and metadata is described in the project explanation PDF (Project_Report.pdf) located in the resources directory.
+The ER Diagram, including constraints, keys, relationships, and metadata, is detailed in the project report (Project_Report.pdf) located in the resources directory.
 
 ![ER Diagram](resources/ER_Diagram.png)
 
@@ -89,4 +95,4 @@ Feel free to contribute to the project by forking the repository and submitting 
 
 ---
 
-Happy Querying!
+Happy Querying! 🚀
